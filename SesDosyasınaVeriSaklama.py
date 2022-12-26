@@ -1,7 +1,7 @@
 
 import wave
 # Ses dosyasını oku
-song = wave.open("song_embedded.wav", mode='rb')
+song = wave.open("sansi.wav", mode='rb')
 # Frameleri oku ve byte dizisine dönüştür
 frame_bytes = bytearray(list(song.readframes(song.getnframes())))
 
@@ -37,7 +37,7 @@ song.close()
 
 
 #------------------------------Şifreli Metni Açığa çıkarma
-song = wave.open("song_embedded.wav", mode='rb')
+song = wave.open("sansi.wav", mode='rb')
 # sesi arraye dönüştürdüm.
 frame_bytes = bytearray(list(song.readframes(song.getnframes())))
 
